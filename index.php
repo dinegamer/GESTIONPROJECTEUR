@@ -2,8 +2,8 @@
 session_start();
 	if(isset($_POST['envoie']))
 	{
-	include("../administration/post.php");
-	include("../administration/ins/connexion.php");
+	include("../gestionProjecteur/administration/post.php");
+	include("../gestionProjecteur/administration/ins/connexion.php");
 	$erreur = "";
 
 		if(empty($username)){
@@ -26,7 +26,7 @@ session_start();
 				$_SESSION['afficher'] = "oui";
 				$_SESSION['admin'] = $tab[0]['prenom'];
 				$_SESSION['utilisateur'] = $tab[0]['login'];
-				header("Location:../administration/index.php");
+				header("Location:../gestionProjecteur/administration/index.php");
 			}
 			
 			

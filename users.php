@@ -3,8 +3,8 @@ session_start();
  $login = '<span style="color:orange">INSCRIPTION</span>';
  $intecsup = '<span style="color:blue">INTECSUP G-PROJ</span>';
  $logo = $login . " " . $intecsup;
- include("../administration/post.php");
- include("../administration/ins/connexion.php");
+ include("../gestionProjecteur/administration/post.php");
+ include("../gestionProjecteur/administration/ins/connexion.php");
  $erreur="";
 
  if(isset($envoie)) {

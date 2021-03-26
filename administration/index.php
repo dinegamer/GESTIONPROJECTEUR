@@ -2,7 +2,7 @@
 session_start();
 unset($_SESSION['identifiant']);
 if(@$_SESSION['afficher'] != "oui"){
-    header('Location:../login/index.php');
+    header('Location:../index.php');
     exit();
 }
 $salutation = (date('H') >= 17) ? 'Bonsoir ' : 'Bonjour ';
